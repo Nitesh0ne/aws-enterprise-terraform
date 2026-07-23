@@ -13,3 +13,20 @@ variable "environment" {
 variable "vpc_cidr" {
   type = string
 }
+
+
+
+
+#subnet varaibles 
+
+variable "public_subnet_cidrs" {
+  type = list(string)
+}
+
+variable "private_app_subnet_cidrs" {
+  type = list(string)
+}
+
+variable "private_db_subnet_cidrs" {
+  type = list(string)
+}

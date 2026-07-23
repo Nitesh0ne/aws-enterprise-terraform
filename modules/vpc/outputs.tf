@@ -16,3 +16,20 @@ output "internet_gateway_id" {
 
   value = aws_internet_gateway.this.id
 }
+
+
+
+#subnet output
+
+
+output "public_subnet_ids" {
+  value = values(aws_subnet.public)[*].id
+}
+
+output "private_app_subnet_ids" {
+  value = values(aws_subnet.private_app)[*].id
+}
+
+output "private_db_subnet_ids" {
+  value = values(aws_subnet.private_db)[*].id
+}
