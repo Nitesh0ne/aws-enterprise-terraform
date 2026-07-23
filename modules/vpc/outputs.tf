@@ -33,3 +33,13 @@ output "private_app_subnet_ids" {
 output "private_db_subnet_ids" {
   value = values(aws_subnet.private_db)[*].id
 }
+
+
+
+output "public_route_table_id" {
+  value = aws_route_table.public.id
+}
+
+output "private_route_table_id" {
+  value = aws_route_table.private.id
+}
