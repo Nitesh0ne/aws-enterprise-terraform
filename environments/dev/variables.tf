@@ -30,3 +30,13 @@ variable "private_app_subnet_cidrs" {
 variable "private_db_subnet_cidrs" {
   type = list(string)
 }
+
+
+
+
+variable "root_volume_size" {
+  description = "Root EBS volume size in GB"
+  type        = number
+  default     = 30
+}
+

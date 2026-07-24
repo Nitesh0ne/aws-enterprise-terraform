@@ -1,17 +1,12 @@
 # Terraform
-.terraform/
+**/.terraform/*
 *.tfstate
 *.tfstate.*
 crash.log
-
-# Variable files
 *.tfvars
 *.tfvars.json
-
-# Terraform plan
-*.tfplan
-
-# Lock file
+override.tf
+override.tf.json
 .terraform.lock.hcl
 
 # IDE
@@ -20,7 +15,3 @@ crash.log
 
 # OS
 .DS_Store
-Thumbs.db
-
-# Logs
-*.log
